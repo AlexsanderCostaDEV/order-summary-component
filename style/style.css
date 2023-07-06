@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-/* font-family: 'Red Hat Display', sans-serif; */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
@@ -14,4 +14,160 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main section {
+    padding: 2rem;
+}
+
+main section h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+main section .firstP {
+    margin-bottom: 1rem;
+}
+
+main section p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+main section .plans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0
+}
+
+main section .plans .left  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main section .plans a {
+    font-weight: 700;
+}
+main section .plans a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsla(245, 75%, 52%, 0.6);
+}
+
+main section .plans .left img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+main section .plans .left .left-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+main section .plans .left .left-right .secondP {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+main section button {
+    background-color: hsl(245, 75%, 52%);
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 0.7rem;
+    margin: 1rem 0 1.3rem 0;
+    color: white;
+    box-shadow: 0 10px 20px hsla(245, 75%, 52%, 0.308);
+}
+main section button:hover {
+    background-color: hsla(245, 75%, 52%, 0.6);
+    cursor: pointer;
+}
+
+main section .last {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+}
+main section .last:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+
+    main {
+        margin: 10rem 1.5rem 10rem 1.5rem;
+        height: 83%;
+    }
+
+    main section {
+        padding: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section .firstP {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+    
+    main {
+        margin: 0 1.8rem 0 1.8rem;
+    }
+
+}
+
+@media (min-width: 415px) and (max-width: 912px) {
+    
+    main{
+        height: 800px;
+        width: 600px;
+    }
+
+    main section {
+        padding: 3rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
